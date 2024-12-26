@@ -8587,17 +8587,17 @@ body:not(.sqs-edit-mode) .blog-item-preview-chip-container.visitor-hidden { disp
 }
 
 #play-music {
-  background-color: #007bff;
+  background-color: transparent;
   color: white;
   border: none;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   font-size: 20px;
   cursor: pointer;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#play-music:hover {
+/* #play-music:hover {
   background-color: #0056b3;
-}
+} */
