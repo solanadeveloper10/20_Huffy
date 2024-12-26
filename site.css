@@ -8577,3 +8577,27 @@ body:not(.sqs-edit-mode) .blog-item-preview-chip-container.visitor-hidden { disp
   filter: blur(5px); /* Налаштування ступеня блюру */
   z-index: 1; /* Забезпечує, що блюр розташований над іншими елементами */
 }
+
+
+#music-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#play-music {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#play-music:hover {
+  background-color: #0056b3;
+}
