@@ -15,8 +15,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 audio, canvas, video { display: inline-block; }
 audio:not([controls]) { display: none; height: 0px; }
 [hidden], template { display: none; }
-html { font-family: sans-serif; }
-body { margin: 0px; }
+html { font-family: sans-serif;
+  overflow-x: hidden; }
+body {
+margin: 0px; 
+overflow-x: hidden;
+}
 a { background: 0px 0px; }
 a:focus { outline: dotted thin; }
 a:active, a:hover { outline: 0px; }
@@ -3458,10 +3462,10 @@ img[data-src]:not([src]):not([srcset]) { visibility: hidden; }
 .section-background, .section-background .section-background-content, .section-background .section-background-canvas, .section-background .section-background-overlay { position: absolute; inset: 0px; }
 .background-width--inset:not(.content-collection):not(.gallery-section):not(.user-items-list-section) .section-background { inset: 4vw; }
 .section-background img { position: relative; }
-.background-pause-button { display: none; position: absolute; right: 14px; bottom: 14px; z-index: 999; border: 0px; padding: 0px; border-radius: 50%; width: 32px; height: 32px; cursor: pointer; background-color: rgba(0, 0, 0, 0.5); backdrop-filter: blur(15px); outline: none; }
+.background-pause-button {  position: absolute; right: 14px; bottom: 14px; z-index: 999; border: 0px; padding: 0px; border-radius: 50%; width: 32px; height: 32px; cursor: pointer; background-color: rgba(0, 0, 0, 0.5); backdrop-filter: blur(15px); outline: none; display: none !important; }
 .background-pause-button.visible { display: block; }
 .background-pause-button:focus { background-color: rgba(0, 0, 0, 0.7); }
-.background-pause-button::before { content: " "; position: absolute; width: 42px; height: 42px; left: -7px; top: -7px; border-radius: 50%; background: transparent; border: 2px solid transparent; }
+.background-pause-button::before {  content: " "; position: absolute; width: 42px; height: 42px; left: -7px; top: -7px; border-radius: 50%; background: transparent; border: 2px solid transparent; display: none; }
 .background-pause-button:focus::before { border-color: rgba(0, 0, 0, 0.7); }
 .background-pause-button::after { content: " "; box-sizing: border-box; position: absolute; border-color: transparent transparent transparent rgb(255, 255, 255); width: 0px; height: 12px; left: 11px; top: 10px; border-style: double; border-width: 0px 0px 0px 10px; }
 .background-pause-button.paused::after { height: 0px; left: 12px; top: 8px; border-style: solid; border-width: 8px 0px 8px 12px; }
